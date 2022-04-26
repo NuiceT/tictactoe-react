@@ -1,9 +1,15 @@
 .App {
-  background-color: #282828;
+  background-color: #1e1e1e;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
   position: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
