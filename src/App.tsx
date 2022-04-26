@@ -39,9 +39,9 @@ function App() {
         playground[x] === playground[z]
       ) {
         if (user) {
-          return setResult("Player 1 (Cross) wins!");
+          return setResult("Player 1 (Cross) won!");
         }
-        return setResult("Player 2 (Circle) wins!");
+        return setResult("Player 2 (Circle) won!");
       }
     });
   };
