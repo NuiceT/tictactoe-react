@@ -28,7 +28,6 @@
 }
 .field.circle::after,
 .field.cross::after {
-  content: "X";
   font-size: 6vw;
   position: absolute;
   width: 100%;
