@@ -1,9 +1,8 @@
 import React, { FC } from "react";
+import "./StartOverlay.css";
 
 interface StartOverlayProps {}
 
-const StartOverlay: FC<StartOverlayProps> = () => (
-  <div>StartOverlay Component</div>
-);
+const StartOverlay: FC<StartOverlayProps> = () => <div></div>;
 
 export default StartOverlay;
