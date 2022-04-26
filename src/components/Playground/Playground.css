@@ -1,1 +1,28 @@
-.Playground {}
+.outerWrapper {
+  background-color: #282828;
+  width: 33em;
+  height: 33em;
+}
+
+.innerWrapper {
+  padding: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.playground {
+  background-color: #1f1f1f;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.field {
+  background-color: #282828;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
