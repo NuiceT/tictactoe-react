@@ -8,6 +8,10 @@
   position: fixed;
 }
 
+.App h1 {
+  color: #fff;
+}
+
 .container {
   display: flex;
   justify-content: center;
