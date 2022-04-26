@@ -8,10 +8,10 @@ function App() {
 
   const [user, setUser] = useState(true);
 
-  const [won, setWon] = useState(false);
+  const [result, setResult] = useState("");
 
   const addCross = (id: number) => {
-    if (playground[id] === undefined && !won) {
+    if (playground[id] === undefined && result === "") {
       let temp = [...playground];
       temp[id] = user ? "cross" : "circle";
       setUser(!user);
@@ -38,17 +38,22 @@ function App() {
         playground[x] === playground[y] &&
         playground[x] === playground[z]
       ) {
-        setWon(true);
+        if (user) {
+          return setResult("Player 1 (Cross) wins!");
+        }
+        return setResult("Player 2 (Circle) wins!");
       }
     });
   };
 
   return (
     <div className="App">
-      <Playground addCross={addCross} playground={playground}></Playground>
-      <h1>
-        Player {user ? "X" : "O"} {}
-      </h1>
+      <div className="container">
+        <Playground addCross={addCross} playground={playground}></Playground>
+      </div>
+      <div className="container">
+        <h1>{result}</h1>
+      </div>
     </div>
   );
 }
