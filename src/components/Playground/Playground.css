@@ -29,7 +29,7 @@
 .field.circle::after,
 .field.cross::after {
   content: "X";
-  font-size: 5em;
+  font-size: 6vw;
   position: absolute;
   width: 100%;
   height: 100%;
